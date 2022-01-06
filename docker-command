@@ -1,0 +1,6 @@
+#Build docker image using dockerfile
+docker build -t $(dockerhub-username/image-name):tag .
+#login with docker hub before pushing
+docker login
+#push image to docker-hub
+docker push $(dockerhub-username/image-name):tag
